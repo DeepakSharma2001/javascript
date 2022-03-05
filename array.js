@@ -24,3 +24,16 @@ elearr.push("yeah");
 console.log("array after push: "+elearr);
 elearr.push("1234545");
 console.log(elearr);
+
+// 2.pop
+
+elearr.pop();
+console.log("array after pop "+ elearr);
+
+// shift 
+elearr.shift();
+console.log("array after shift:" +elearr);
+
+// unshift
+elearr.unshift("unshift added");
+console.log("array after unshift:"+ elearr);
