@@ -37,3 +37,8 @@ console.log("array after shift:" +elearr);
 // unshift
 elearr.unshift("unshift added");
 console.log("array after unshift:"+ elearr);
+
+
+// length
+let len = elearr.length;
+console.log(len);
