@@ -22,3 +22,5 @@ console.log(arr);
 console.log("array befor push: "+elearr);
 elearr.push("yeah");
 console.log("array after push: "+elearr);
+elearr.push("1234545");
+console.log(elearr);
