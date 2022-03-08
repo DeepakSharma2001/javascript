@@ -30,15 +30,15 @@ console.log(elearr);
 elearr.pop();
 console.log("array after pop "+ elearr);
 
-// shift 
+// 3.shift 
 elearr.shift();
 console.log("array after shift:" +elearr);
 
-// unshift
+// 4.unshift
 elearr.unshift("unshift added");
 console.log("array after unshift:"+ elearr);
 
 
-// length
+// 5.length
 let len = elearr.length;
 console.log(len);
