@@ -26,4 +26,17 @@ let capamerica= {
     }
 
 }
+//whole object 
 console.log(capamerica);
+
+// acess from an objects
+//name of capamerica
+console.log(capamerica.Name);// just write the key with dot notation to acess
+console.log(capamerica.Address.City);
+// array ke elements ko acess krne k liye 
+console.log(capamerica.friends[0]);
+// function k liye 
+console.log(capamerica.sayHI()); // yeh undefined isloye aaya bcz no return value
+
+
+capamerica.sayHI();
