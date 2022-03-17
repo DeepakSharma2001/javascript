@@ -1,6 +1,15 @@
-// console.log("hellowrld")
-let inputArr = process.argv;  // this will give output in array 
-console.log(inputArr);
-//['pathtonode','pathtofile','input_paseed_in_space']
-let input = inputArr[6];
-console.log(input);
+let fs = require("fs");
+let FolderPath = process.argv[2]; // input ka tareeka
+
+// console.log(FolderPath);
+ let folderExist = fs.existsSync(FolderPath);
+
+ if(folderExist){
+     // we will code here
+    //  console.log("path is valid!!!"); 
+    let files = fs.readdirSync(FolderPath);
+    console.log(files);
+    }
+ else{
+     console.log("please enter a Valid Path!!!");
+ }
