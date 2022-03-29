@@ -5,7 +5,7 @@ const request = require('request');   // Here in our activity what we have done 
 const jsdom = require("jsdom");   //jsdom required.
 const { JSDOM } = jsdom;
 
-const link = "https://www.espncricinfo.com/series/ipl-2021-1249214/chennai-super-kings-vs-kolkata-knight-riders-final-1254117/full-scorecard";
+const link = "ttps://www.espncricinfo.com/series/ipl-2021-1249214/chennai-super-kings-vs-kolkata-knight-riders-final-1254117/full-scorecard";
 
 request(link, cb);  // make an attribute  request to access and give link and function to it.
 
