@@ -1,5 +1,5 @@
 const request = require('request');   // Here in our activity what we have done is that we go through an website/webpage and
-                                        // web scrap our data we use botjh request module and jsdom module 
+                                        // web scrap our data we use both request module and jsdom module 
                                         // request module for accessing resonse from website i.e we have our data in html form
                                         // jsdom module to we scrap any particular data from the website
 const jsdom = require("jsdom");   //jsdom required.

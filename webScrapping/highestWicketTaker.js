@@ -5,8 +5,8 @@ const link = "https://www.espncricinfo.com/series/ipl-2021-1249214/royal-challen
 
 request(link,cb);
 
-function cb(error,response,html){
-    if(error){
+function cb(error,response,html){ // her we made the fucntion by which we can analze the way to scrap wheater thereis error or not
+    if(error){                     // 
         console.log(error);
     }else{
         const dom = new JSDOM(html);
@@ -21,7 +21,7 @@ function cb(error,response,html){
                 if(tds.length>1){
                     let name = tds[0].textContent;
                     let wicket = tds[4].textContent;
-                    //  console.log("Name of Bowler ---> ",name,"     Wickets ---> ",wicket);
+                    console.log("Name of Bowler ---> ",name,"     Wickets ---> ",wicket);
                     if(wicket>mostWicket){
                         mostWicket = wicket;
                         nameOfHighestWicketTacker = name;
