@@ -30,23 +30,23 @@ const { fileURLToPath } = require("url");
 
 // if doesnot exits we have to chechk 
 
-// if(!fs.existsSync("hamari directory"))
-    // fs.mkdirSync("hamari directory");
+if(!fs.existsSync("hamari directory"))
+    fs.mkdirSync("hamari directory");
 
 
     // read a directory 
 
-    // let folderPath = "C:\Users\DEEPAK\Desktop\FJP-6\module2\node";
-    // let contentofFolder = fs.readFileSync(folderPath);
-    // console.log(contentofFolder);
+    let folderPath = "C:\Users\DEEPAK\Desktop\FJP-6\module2\node";
+    let contentofFolder = fs.readdirSync(folderPath);
+    console.log(contentofFolder);
 
-    // delete directory
+    // delete directory 
 
     // fs.unlinkSync("hamari directory");
     
 
     // to delete
-    fs.rmdirSync("hamari directory"); // wrks on empty dir.
+    // fs.rmdirSync("hamari directory"); // wrks on empty dir.
 
 // copy a file 
 

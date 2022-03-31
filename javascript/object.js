@@ -58,6 +58,8 @@ console.log("chnage of city",capamerica);
 // access a key another way to access 
 
 // 1. acess key
-console.log(capamerica.Name);
+console.log(capamerica.Name); // yeh issse by default isse string manti hai
 // 2. tareeka
-console.log(capamerica['Name']);
+console.log(capamerica['Name']); //but yh nhi manti yh variable bhi manleti hai 
+
+
