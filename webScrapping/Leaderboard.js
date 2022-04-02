@@ -39,26 +39,30 @@ function cb2(error,response,html){
                 let balls = cells[3].textContent;
                 let fours = cells[5].textContent;
                 let sixes = cells[6].textContent;
+                processPlayer(name,runs,balls,fours,sixes);
                 // console.log("Name : ",name,"Runs : ",runs,"Balls : ",balls,"Fours : ",fours,"Sixes : ",sixes);
             }
         }
     }
 }
 
-processPlayer('Rohit','15','4','2','4');
-processPlayer('Virat','50','20','4','3')
-processPlayer('Rohit','40','20','1','2');
+// processPlayer('Rohit','15','4','2','4');
+// processPlayer('Virat','50','20','4','3');
+// processPlayer('Rohit','40','20','1','2');
+
 console.log(leaderboard);
 
 function processPlayer(name,runs,balls,fours,sixes){
     runs = Number(runs);
-    balls = Number(balls);
-    fours = Number(fours);
+    balls = Number(balls);      //make as number because otherwise it will concatename as string
+    fours = Number(fours);      // because textcontent string lekr aata hai
     sixes = Number(sixes);
     for(let i=0;i<leaderboard.length;i++){
         let playerObj = leaderboard[i];
         if(playerObj.Name == name){
             //will do some work here
+            
+            playerObj.Innings+=1;
             playerObj.Runs+=runs;
             playerObj.Balls+=balls;
             playerObj.Fours+=fours;
@@ -69,6 +73,7 @@ function processPlayer(name,runs,balls,fours,sixes){
     // code coming here means we did not find our player inside leaderboard
     let obj = {
         Name:name,
+        Innings:1,
         Runs:runs,
         Balls:balls,
         Fours:fours,
@@ -76,3 +81,5 @@ function processPlayer(name,runs,balls,fours,sixes){
     }
     leaderboard.push(obj);
 }
+
+console.log("Line84:",leaderboard);
