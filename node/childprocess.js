@@ -8,7 +8,7 @@ let cp = require('child_process'); // yeh btara hai hm childprocess use krre hai
 // cp.execFileSync("calc"); // for linux gnome-calculator
 
 // open vs code 
-cp.execSync("code");
+cp.execSync("");
 
 
 
